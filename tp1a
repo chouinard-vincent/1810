@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+
+const float MILE_EN_KM = 1.609344;
+const float LBS_EN_KG = 0.454;
+int nbMiles;
+int nbLBS;
+float distance;
+float poid;
+// saisie de donnee
+printf("tapez la distance en mille pour vous rendre a l'UDEM\n") ;
+scanf("%d", &nbMiles);
+printf("tapez votre poid en livres\n");
+scanf("%d", &nbLBS);
+// conversion en metre
+distance = nbMiles*MILE_EN_KM;
+poid = nbLBS*LBS_EN_KG;
+// affichage la taille en 2 system
+printf ("La personne demeure a : %d miles de l'udem\n", nbMiles);
+printf("Sont poid est de %d livres\n", nbLBS) ;
+printf("La distance en km est %.2f km\n" , distance ) ;
+printf("Sont poid en kg est %.2f kg", poid);
+return 0;
+}
